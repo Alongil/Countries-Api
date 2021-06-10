@@ -30,8 +30,9 @@ style.css file: design.
 
 2. Install XAMPP on your computer.
 
-3. Install MySQL on your computer.
-4. if you like to change the default port of XAMMP (the default XAMPP port is 80) do the following:
+3. Enable MySQL serviece through the XAMPP control panel, and configure username password host and port.
+4. Go to the db credential.php file and update the corresponding credentials.
+5. if you like to change the default port of XAMMP (the default XAMPP port is 80) do the following:
 - Stop Apache service from XAMPP control panel
 - Open httpd.conf
 - Change listen 80 to 8080 for example
