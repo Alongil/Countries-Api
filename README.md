@@ -20,7 +20,7 @@ functions.php: contains the functions that query the database using sql queries 
 find_place.php: gets the information from the ajax call in index.php (will be described in the front end paragraph), calling the relevant function in functions.php and sending the response back to index.php, if it gets an error as a response, it sends the type of error back to index.php.
 
 Front end:
-ןndex.php file: in charge of handling the users inputs (front end validations of user queries), sending the values to the server using ajax and handling the response that comes back, depending on the response (error/type of error/not error) it chooses the relevant information to show to the user.
+index.php file: in charge of handling the users inputs (front end validations of user queries), sending the values to the server using ajax and handling the response that comes back, depending on the response (error/type of error/not error) it chooses the relevant information to show to the user.
 
 style.css file: design.
 
@@ -31,10 +31,10 @@ style.css file: design.
 2. Install XAMPP on your computer.
 
 3. Install MySQL on your computer.
-4. if you like to change the default port of XAMMP do the following, if not (the default XAMPP port is 80):
+4. if you like to change the default port of XAMMP (the default XAMPP port is 80) do the following:
 - Stop Apache service from XAMPP control panel
 - Open httpd.conf
-- Change listen 80 to listen 8080
+- Change listen 80 to 8080 for example
 - Change serverName localhost:80 to ServerName localhost:8080 
 - Save the httpd.conf file
  OR you can use this short video guide to change it - https://www.youtube.com/watch?v=MaFB6od53Aw.
