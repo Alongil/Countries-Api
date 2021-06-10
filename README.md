@@ -42,4 +42,5 @@ find_place.php: gets the information from the ajax call in index.php (will be de
 
 front end:
 index.php file: in charge of handling the users inputs (front end validations of user queries), sending the values to the server using ajax and handling the response that comes back, depending on the response (error/type of error/not error) it chooses the relevant information to show to the user.
+
 style.css file: design.
