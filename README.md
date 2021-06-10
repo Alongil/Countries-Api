@@ -44,9 +44,9 @@ style.css file: design.
 8. Browse to the URL: http://localhost:{XAMPP PORT}/YOURPROJECTFOLDER/index.php.
 9. Once the url is up and running you can choose a country with the select input and type in any zip code you wnat, if the zip code you entered exists in the country you select you will get a list of places hat are in this zip code and some information about them.
 
-Note: 
+Important Notes: 
 If you encounter in a "caching_sha2" error please type in the following query in MySQL: ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password' 
--  password will be provided.
+-  Please dont forget to insert your data base cradentials to the db_cradentails.php file before running.
 
 
 Thank you,
