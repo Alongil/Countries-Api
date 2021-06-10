@@ -8,7 +8,7 @@ search states by zip codes
 2. Install XAMPP on your computer.
 
 3. Install MySQL on your computer.
-4. if you want XAMPP to run on local port 8080 do the following, if not (the default XAMPP port is 80):
+4. if you want XAMPP to run on port 8080 do the following, if not (the default XAMPP port is 80):
 - Stop Apache service from XAMPP control panel
 - Open httpd.conf
 - Change listen 80 to listen 8080
@@ -18,7 +18,7 @@ search states by zip codes
 5. Import files from the git repository link - countries Api.
 6. Import the countries_db.sql file to my MySQL to create the DB.
 7. Make sure files are in the correct folder the project folder containing the files have to be inside XAMPP\htdocs in my case: C:\xampp\htdocs\countriesApi.
-8. Type in the URL: http://localhost:8080/YOURPROJECTFOLDER/index.php.
+8. Browse in the URL: http://localhost:8080/YOURPROJECTFOLDER/index.php.
 9. Once the url is up and running you can choose a country with the select input and type in any zip code you wnat, if the zip code you entered exists in the country you select you will get a list of places hat are in this zip code and some information about them.
 
 Note: 
