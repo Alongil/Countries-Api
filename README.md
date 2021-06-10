@@ -8,7 +8,7 @@ search states by zip codes
 2. Install XAMPP on your computer.
 
 3. Install MySQL on your computer.
-4. make sure XAMPP is running on local port 8080, if not  (the default XAMPP port is 80) do the following:
+4. if you want XAMPP to run on local port 8080 do the following, if not (the default XAMPP port is 80):
 - Stop Apache service from XAMPP control panel
 - Open httpd.conf
 - Change listen 80 to listen 8080
@@ -33,7 +33,8 @@ The first table is the zip code table, containing a country's zip code, name and
 The second table is the places table, containing the name, longitude and latitude of the place or places in the zip code specified.
 Table two also contains a foreign key of the zip code id that represents the combination of country and zip code in the first table.
 
-countries_db.sql: contains the DB.
+###countries_db.sql: 
+contains the DB.
 
 db_credentials.php: contains the information needed to connect to DB
 
