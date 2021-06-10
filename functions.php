@@ -28,7 +28,7 @@ function findPlaceByZipCode($country_abbreviation, $zip_code)
         if ($zip_id == -1) {
             return [];
         }
-        // handel error if there is an error in db
+        // handle error if there is an error in db
         if ($zip_id == -2) {
             throw new Exception("DB error");
         }
