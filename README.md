@@ -30,10 +30,16 @@ The first table is the zip code table, containing a country's zip code, name and
 The second table is the places table, containing the name, longitude and latitude of the place or places in the zip code specified.
 Table two also contains a foreign key of the zip code id that represents the combination of country and zip code in the first table.
 
+countries_db.sql: contains the DB.
+
 db_credentials.php: contains the information needed to connect to DB
+
 db_connection.php: contains the connection function to DB
-functions.php: contains the functions that query the database using sql queries for checking whether the user query exists in the DB or, if it doesn't, goes to the API, gets the needed information for the user query and inserts the relevant new tuples into the DB. 
+
+functions.php: contains the functions that query the database using sql queries for checking whether the user query exists in the DB or, if it doesn't, goes to the API, gets the needed information for the user query and inserts the relevant new tuples into the DB.
+
 find_place.php: gets the information from the ajax call in index.php (will be described in the front end paragraph), calling the relevant function in functions.php and sending the response back to index.php, if it gets an error as a response, it sends the type of error back to index.php.
 
 front end:
 index.php file: in charge of handling the users inputs (front end validations of user queries), sending the values to the server using ajax and handling the response that comes back, depending on the response (error/type of error/not error) it chooses the relevant information to show to the user.
+style.css file: design.
