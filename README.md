@@ -17,6 +17,7 @@ search states by zip codes
 6. import the countries_db.sql file to my MySQL to create the DB.
 7. make sure files are in the correct folder the project folder containing the files have to be inside XAMPP\htdocs in my case: C:\xampp\htdocs\countriesApi.
 8. type in the URL: http://localhost:8080/YOURPROJECTFOLDER/index.php.
+9. Once the url is up and running you can choose a country with the select input and type in any zip code you wnat, if the zip code you entered exists in the country you select you will get a list of places hat are in this zip code and some information about them.
 
 note: 
 if you encounter in a "caching_sha2" error please type in the following query in MySQL: ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password' 
@@ -44,3 +45,6 @@ front end:
 index.php file: in charge of handling the users inputs (front end validations of user queries), sending the values to the server using ajax and handling the response that comes back, depending on the response (error/type of error/not error) it chooses the relevant information to show to the user.
 
 style.css file: design.
+
+Thank you,
+have fun!
