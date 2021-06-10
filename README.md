@@ -3,7 +3,7 @@ search states by zip codes
 
 ## Set up
 
- 1.Install php on your computer.
+1.Install php on your computer.
 
 2. Install XAMPP on your computer.
 
