@@ -1,29 +1,5 @@
 # Countries-Api
-search states by zip codes 
-
-## Set up
-
-1.Install php on your computer.
-
-2. Install XAMPP on your computer.
-
-3. Install MySQL on your computer.
-4. if you want XAMPP to run on port 8080 do the following, if not (the default XAMPP port is 80):
-- Stop Apache service from XAMPP control panel
-- Open httpd.conf
-- Change listen 80 to listen 8080
-- Change serverName localhost:80 to ServerName localhost:8080 
-- Save the httpd.conf file
- OR you can use this short video guide to change it - https://www.youtube.com/watch?v=MaFB6od53Aw.
-5. Import files from the git repository link - countries Api.
-6. Import the countries_db.sql file to my MySQL to create the DB.
-7. Make sure files are in the correct folder the project folder containing the files have to be inside XAMPP\htdocs in my case: C:\xampp\htdocs\countriesApi.
-8. Browse in the URL: http://localhost:8080/YOURPROJECTFOLDER/index.php.
-9. Once the url is up and running you can choose a country with the select input and type in any zip code you wnat, if the zip code you entered exists in the country you select you will get a list of places hat are in this zip code and some information about them.
-
-Note: 
-If you encounter in a "caching_sha2" error please type in the following query in MySQL: ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password' 
--  password will be provided.
+search places by zip codes 
 
 ## Short overview on the project
 
@@ -33,8 +9,7 @@ The first table is the zip code table, containing a country's zip code, name and
 The second table is the places table, containing the name, longitude and latitude of the place or places in the zip code specified.
 Table two also contains a foreign key of the zip code id that represents the combination of country and zip code in the first table.
 
-###countries_db.sql: 
-contains the DB.
+countries_db.sql: contains the DB.
 
 db_credentials.php: contains the information needed to connect to DB
 
@@ -48,6 +23,31 @@ Front end:
 ןndex.php file: in charge of handling the users inputs (front end validations of user queries), sending the values to the server using ajax and handling the response that comes back, depending on the response (error/type of error/not error) it chooses the relevant information to show to the user.
 
 style.css file: design.
+
+## Set up
+
+1.Install php on your computer.
+
+2. Install XAMPP on your computer.
+
+3. Install MySQL on your computer.
+4. if you like to change the default port of XAMMP do the following, if not (the default XAMPP port is 80):
+- Stop Apache service from XAMPP control panel
+- Open httpd.conf
+- Change listen 80 to listen 8080
+- Change serverName localhost:80 to ServerName localhost:8080 
+- Save the httpd.conf file
+ OR you can use this short video guide to change it - https://www.youtube.com/watch?v=MaFB6od53Aw.
+5. Import files from the git repository link - countries Api.
+6. Import the countries_db.sql file to my MySQL to create the DB.
+7. Make sure files are in the correct folder the project folder containing the files have to be inside XAMPP\htdocs in my case: C:\xampp\htdocs\countriesApi.
+8. Browse to the URL: http://localhost:{XAMPP PORT}/YOURPROJECTFOLDER/index.php.
+9. Once the url is up and running you can choose a country with the select input and type in any zip code you wnat, if the zip code you entered exists in the country you select you will get a list of places hat are in this zip code and some information about them.
+
+Note: 
+If you encounter in a "caching_sha2" error please type in the following query in MySQL: ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password' 
+-  password will be provided.
+
 
 Thank you,
 have fun!
