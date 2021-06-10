@@ -43,7 +43,7 @@ function getPlaces($zip_id)
     $result = mysqli_query($conn, $sql);
     if (!$result) {
         $error = mysqli_error($conn);
-        error_log($error);;
+        error_log($error);
         throw new Exception("DB error");
     }
     while ($places = mysqli_fetch_all($result, MYSQLI_ASSOC)) {
