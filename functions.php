@@ -9,6 +9,7 @@ function findPlaceByZipCode($country_abbreviation, $zip_code)
     $escaped_zip_code = mysqli_real_escape_string($conn, $zip_code);
     $escaped_country_abbreviation = mysqli_real_escape_string($conn,$country_abbreviation);
     $sql = "SELECT country, zip_id FROM zip_codes where zip_code = '$escaped_zip_code' AND country_abbreviation = '$escaped_country_abbreviation'";
+//     if the connection is corrupted result will return false
     $result = mysqli_query($conn, $sql);
     if (!$result) {
         $error = mysqli_error($conn);
